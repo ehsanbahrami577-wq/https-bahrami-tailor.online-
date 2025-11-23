@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>خیاطی بهرامی</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">خیاطی بهرامی</h1>
+      <nav class="top-nav">
+        <a href="index.html" class="active">صفحه اصلی</a>
+        <a href="gallery.html">نمونه‌کارها</a>
+        <a href="#contact">تماس</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-left">
+          <h2>پارچه‌های کردی با دوختی بی‌نظیر</h2>
+          <p class="lead">
+            بهترین پارچه‌ها، رنگ‌ها و طرح‌های کردی — دوخت کلاسیک و ظریف بر اساس سلیقهٔ شما.
+            سفارش آنلاین و مشاورهٔ رایگان برای انتخاب پارچه و اندازه‌گیری.
+          </p>
+          <ul class="promo-list">
+            <li>قیمت‌های رقابتی</li>
+            <li>دوخت سفارشی و تحویل به‌موقع</li>
+            <li>مشاوره تخصصی انتخاب پارچه</li>
+          </ul>
+
+          <div class="cta-row">
+            <a href="gallery.html" class="btn">دیدن نمونه‌کارها</a>
+            <a href="#contact" class="btn-outline">ثبت مشاوره</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-grid">
+            <img src="images/fabric1.jpg" alt="پارچه کردی نمونه ۱">
+            <img src="images/fabric2.jpg" alt="پارچه کردی نمونه ۲">
+            <img src="images/fabric3.jpg" alt="پارچه کردی نمونه ۳">
+            <img src="images/fabric4.jpg" alt="پارچه کردی نمونه ۴">
+          </div>
+          <p class="note">(تصاویر نمونه — بعداً می‌توانید عکس‌های خودتان را جایگزین کنید)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="advert">
+      <div class="container">
+        <h3>دربارهٔ پارچه‌ها</h3>
+        <p>
+          پارچه‌های ما با دقت و وسواس انتخاب شده‌اند: تار و پود محکم، رنگ ثابت و طرح‌هایی که فرهنگ کردی را بازتاب می‌دهند.
+          اگر دنبال کیفیت و ماندگاری هستید — اینجا انتخاب درست شماست.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container contact-inner">
+        <div class="contact-left">
+          <h3>ثبت مشاوره</h3>
+          <p>برای ثبت مشاوره، فرم را پر کنید یا مستقیماً با ما تماس بگیرید.</p>
+
+          <form class="consult-form" onsubmit="return submitForm(event)">
+            <label>نام و نام‌خانوادگی
+              <input type="text" name="name" required placeholder="مثال: محمد رضایی">
+            </label>
+
+            <label>تلفن
+              <input type="tel" name="phone" required placeholder="۰۹۹۲۳۹۵۵۹۹۶">
+            </label>
+
+            <label>پیام / توضیحات
+              <textarea name="message" rows="4" placeholder="خلاصه‌ای از سفارش یا سوالتان"></textarea>
+            </label>
+
+            <button type="submit" class="btn">ثبت مشاوره</button>
+            <p class="small-note">یا با شمارهٔ تلفن تماس بگیرید: <strong>۰۹۹۲۳۹۵۵۹۹۶</strong></p>
+          </form>
+        </div>
+
+        <div class="contact-right">
+          <h4>آدرس مغازه</h4>
+          <p class="address">
+            نقده، بلوار جمهوری اسلامی، جنب کبابی مام کریم
+          </p>
+          <p class="quality-note">
+            امکان جایگزینی تصاویر با عکس‌های باکیفیت‌تر وجود دارد.
+          </p>
+
+          <div class="quick-info">
+            <p><strong>ساعات کاری:</strong> هر روز ۹:۰۰ — ۲۰:۰۰</p>
+            <p><strong>تلفن:</strong> ۰۹۹۲۳۹۵۵۹۹۶</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© همهٔ حقوق برای خیاطی بهرامی محفوظ است.</p>
+    </div>
+  </footer>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      const f = e.target;
+      alert('درخواست شما ثبت شد. تیم ما با شما تماس خواهد گرفت.');
+      f.reset();
+      return false;
+    }
+  </script>
+</body>
+</html><!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>نمونه‌کارها — خیاطی بهرامی</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">خیاطی بهرامی</h1>
+      <nav class="top-nav">
+        <a href="index.html">صفحه اصلی</a>
+        <a href="gallery.html" class="active">نمونه‌کارها</a>
+        <a href="index.html#contact">تماس</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery-hero">
+      <div class="container">
+        <h2>گالری پارچه‌های کردی</h2>
+        <p>چند نمونه پارچه و دوخت — برای دیدن تصویر بزرگ‌تر روی عکس کلیک کنید.</p>
+
+        <div class="gallery-grid">
+          <a href="images/fabric1.jpg" class="gallery-item"><img src="images/fabric1.jpg" alt="پارچه ۱"></a>
+          <a href="images/fabric2.jpg" class="gallery-item"><img src="images/fabric2.jpg" alt="پارچه ۲"></a>
+          <a href="images/fabric3.jpg" class="gallery-item"><img src="images/fabric3.jpg" alt="پارچه ۳"></a>
+          <a href="images/fabric4.jpg" class="gallery-item"><img src="images/fabric4.jpg" alt="پارچه ۴"></a>
+          <a href="images/fabric5.jpg" class="gallery-item"><img src="images/fabric5.jpg" alt="پارچه ۵"></a>
+          <a href="images/fabric6.jpg" class="gallery-item"><img src="images/fabric6.jpg" alt="پارچه ۶"></a>
+          <a href="images/fabric7.jpg" class="gallery-item"><img src="images/fabric7.jpg" alt="پارچه ۷"></a>
+          <a href="images/fabric8.jpg" class="gallery-item"><img src="images/fabric8.jpg" alt="پارچه ۸"></a>
+        </div>
+
+        <p class="small-note">(تصاویر نمونه — می‌توانید عکس‌های خودتان را بعداً جایگزین کنید.)</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>تماس: ۰۹۹۲۳۹۵۵۹۹۶ — نقده، بلوار جمهوری اسلامی، جنب کبابی مام کریم</p>
+    </div>
+  </footer>
+</body>
+</html>:root{
+  --max-w:1100px;
+  --accent:#2b6cb0;
+  --muted:#666;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: "Vazirmatn", "Tahoma", sans-serif;
+  margin:0;
+  color:#222;
+  background:#fafafa;
+  line-height:1.5;
+  direction: rtl;
+}
+
+.container{max-width:var(--max-w);margin:0 auto;padding:20px;}
+
+.site-header{background:#fff;border-bottom:1px solid #eee}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{margin:12px 0;font-size:26px;color:#111}
+.top-nav a{margin-left:12px;text-decoration:none;color:var(--muted);padding:10px;border-radius:6px}
+.top-nav a.active{color:var(--accent);font-weight:600}
+
+.hero{padding:30px 0;background:linear-gradient(180deg, rgba(43,108,176,0.05), transparent);}
+.hero-left{flex:1}
+.hero-right{flex:1}
+.hero .container{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}
+
+.lead{color:var(--muted);margin-top:8px}
+.promo-list{margin:12px 0 16px;padding-left:14px;color:var(--muted)}
+
+.cta-row{display:flex;gap:10px;margin-top:10px}
+.btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:6px;text-decoration:none;display:inline-block}
+.btn-outline{border:1px solid var(--accent);color:var(--accent);padding:10px 14px;border-radius:6px;text-decoration:none}
+
+.hero-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.hero-grid img{width:100%;height:110px;object-fit:cover;border-radius:6px;border:1px solid #eee}
+.note{font-size:12px;color:var(--muted);margin-top:8px}
+
+.advert{padding:18px 0;background:#fff;border-top:1px solid #eee;border-bottom:1px solid #eee}
+.advert h3{margin-top:0}
+
+.contact{padding:28px 0}
+.contact-inner{display:flex;gap:20px;flex-wrap:wrap}
+.contact-left{flex:1;min-width:280px}
+.contact-right{width:320px;min-width:240px;background:#fff;padding:16px;border-radius:8px;border:1px solid #eee}
+
+.consult-form label{display:block;margin-bottom:10px;font-size:14px;color:#333"}
+.consult-form input, .consult-form textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;margin-top:6px"}
+.small-note{font-size:13px;color:var(--muted);margin-top:10px"}
+
+.site-footer{padding:18px 0;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid #eee;background:#fff;margin-top:20px"}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:18px"}
+.gallery-grid img{width:100%;height:150px;object-fit:cover;border-radius:6px;border:1px solid #eee"}
+
+@media (max-width:800px){
+  .hero .container{flex-direction:column"}
+  .contact-inner{flex-direction:column"}
+  .contact-right{width:100%}
+}
